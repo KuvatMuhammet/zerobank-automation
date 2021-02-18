@@ -25,6 +25,12 @@ public abstract class BasePage {
     @FindBy(xpath = "//li[@id='onlineBankingMenu']")
     public WebElement onlineBankingMenu;
 
+    @FindBy(xpath = "//a[contains(text(),'Zero Bank')]")
+    public WebElement dashboardTitle;
+
+    @FindBy(xpath = "//form[@id='login_form']/div[1]")
+    public WebElement errorMessage;
+
 
     public void clickOnAccountSummary(String link){
 
